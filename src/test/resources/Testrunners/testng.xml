@@ -1,0 +1,17 @@
+<suite name="Automation Test Store">
+	<listeners>
+
+<listener class-name="com.qa.chroma.listeners.Listeners"></listener>
+</listeners>
+	
+	
+	<test name="Automation Smoke Testing">
+		
+		<classes>
+			<class name="com.qa.chroma.testcase.HomePageTestCase"/>
+			
+		</classes>
+		
+	</test>
+	
+</suite>
