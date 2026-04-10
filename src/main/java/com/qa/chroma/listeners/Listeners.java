@@ -56,10 +56,10 @@ public class Listeners  implements ITestListener {
 		try {
 			String imgPath= new TestUtil().takeScreenshotAtEndOfTest(result.getName());
 			//String imgPath= TestUtil.takeScreenshotAtEndOfTest(result.getName());
-			test.addScreenCaptureFromPath(imgPath);
+			//test.addScreenCaptureFromPath(imgPath);
 			test.fail("Screenshot",
 			        MediaEntityBuilder
-			                .createScreenCaptureFromPath("screenshots/" + imgPath)
+			                .createScreenCaptureFromPath(imgPath)
 			                .build());
 		} catch (IOException e) {
 			e.printStackTrace();
