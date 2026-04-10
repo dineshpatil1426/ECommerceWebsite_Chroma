@@ -11,7 +11,6 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -28,7 +27,6 @@ public class Listeners  implements ITestListener {
 		
 		//String time = new SimpleDateFormat("dd.MM.yyyy.hh.mm.ss").format(new Date());
 		//fileName = "myReport" + time + ".html";
-		
 		fileName = "myReport.html";
 		
 		String currentDir = System.getProperty("user.dir");
@@ -56,11 +54,7 @@ public class Listeners  implements ITestListener {
 		try {
 			String imgPath= new TestUtil().takeScreenshotAtEndOfTest(result.getName());
 			//String imgPath= TestUtil.takeScreenshotAtEndOfTest(result.getName());
-			//test.addScreenCaptureFromPath(imgPath);
-			test.fail("Screenshot",
-			        MediaEntityBuilder
-			                .createScreenCaptureFromPath(imgPath)
-			                .build());
+			test.addScreenCaptureFromPath(imgPath);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
