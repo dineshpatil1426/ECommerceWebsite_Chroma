@@ -11,6 +11,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -56,6 +57,10 @@ public class Listeners  implements ITestListener {
 			String imgPath= new TestUtil().takeScreenshotAtEndOfTest(result.getName());
 			//String imgPath= TestUtil.takeScreenshotAtEndOfTest(result.getName());
 			test.addScreenCaptureFromPath(imgPath);
+			test.fail("Screenshot",
+			        MediaEntityBuilder
+			                .createScreenCaptureFromPath("screenshots/" + imgPath)
+			                .build());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
