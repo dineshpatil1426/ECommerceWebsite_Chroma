@@ -1,8 +1,8 @@
 package com.qa.chroma.listeners;
 
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+//import java.text.SimpleDateFormat;
+//import java.util.Date;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -25,8 +25,11 @@ public class Listeners  implements ITestListener {
 
 	public void onStart(ITestContext context) {
 		
-		String time = new SimpleDateFormat("dd.MM.yyyy.hh.mm.ss").format(new Date());
-		fileName = "myReport" + time + ".html";
+		//String time = new SimpleDateFormat("dd.MM.yyyy.hh.mm.ss").format(new Date());
+		//fileName = "myReport" + time + ".html";
+		
+		fileName = "myReport.html";
+		
 		String currentDir = System.getProperty("user.dir");
 		spark = new ExtentSparkReporter(currentDir +".\\reports\\" + fileName);
 		spark.config().setDocumentTitle("QA Automation report");

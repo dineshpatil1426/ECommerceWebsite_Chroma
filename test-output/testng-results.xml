@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-29T19:58:29 IST" name="Automation Test Store" finished-at="2026-03-29T19:59:22 IST" duration-ms="53400">
+  <suite started-at="2026-04-11T03:47:39 IST" name="Automation Test Store" finished-at="2026-04-11T03:48:32 IST" duration-ms="53626">
     <groups>
     </groups>
-    <test started-at="2026-03-29T19:58:29 IST" name="Automation Smoke Testing" finished-at="2026-03-29T19:59:22 IST" duration-ms="53400">
+    <test started-at="2026-04-11T03:47:39 IST" name="Automation Smoke Testing" finished-at="2026-04-11T03:48:32 IST" duration-ms="53626">
       <class name="com.qa.chroma.testcase.HomePageTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-03-29T19:58:30 IST" name="setup" finished-at="2026-03-29T19:58:37 IST" duration-ms="7637" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-04-11T03:47:39 IST" name="setup" finished-at="2026-04-11T03:47:47 IST" duration-ms="7803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifytitlePageTest()[pri:1, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-03-29T19:58:37 IST" name="verifytitlePageTest" finished-at="2026-03-29T19:58:37 IST" duration-ms="40" status="PASS">
+        <test-method signature="verifytitlePageTest()[pri:1, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-04-11T03:47:47 IST" name="verifytitlePageTest" finished-at="2026-04-11T03:47:47 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytitlePageTest -->
-        <test-method signature="getSearchTest(java.lang.String)[pri:2, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-03-29T19:58:38 IST" name="getSearchTest" data-provider="geDataExcel" finished-at="2026-03-29T19:58:59 IST" duration-ms="21034" status="PASS">
+        <test-method signature="getSearchTest(java.lang.String)[pri:2, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-04-11T03:47:48 IST" name="getSearchTest" data-provider="geDataExcel" finished-at="2026-04-11T03:48:09 IST" duration-ms="20913" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,27 +26,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSearchTest -->
-        <test-method signature="selectBrandDropdownTest()[pri:3, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-03-29T19:58:59 IST" name="selectBrandDropdownTest" finished-at="2026-03-29T19:59:01 IST" duration-ms="2495" status="PASS">
+        <test-method signature="selectBrandDropdownTest()[pri:3, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-04-11T03:48:09 IST" name="selectBrandDropdownTest" finished-at="2026-04-11T03:48:11 IST" duration-ms="2481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectBrandDropdownTest -->
-        <test-method signature="verifyDiscountSortingTest()[pri:4, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-03-29T19:59:01 IST" name="verifyDiscountSortingTest" finished-at="2026-03-29T19:59:22 IST" duration-ms="20338" status="FAIL">
+        <test-method signature="verifyDiscountSortingTest()[pri:4, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-04-11T03:48:11 IST" name="verifyDiscountSortingTest" finished-at="2026-04-11T03:48:31 IST" duration-ms="20357" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (193c3df4f14c1cbe2fe3bc3b2586bd75)] -> xpath: (//*[text()='Featured'])[1]] (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (3f6cb244cf732f968ccfbacdb426d676)] -> xpath: (//*[text()='Featured'])[1]] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\patil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61491}, goog:processID: 19272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61491/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 193c3df4f14c1cbe2fe3bc3b2586bd75]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\patil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65153}, goog:processID: 22296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65153/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f6cb244cf732f968ccfbacdb426d676]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (193c3df4f14c1cbe2fe3bc3b2586bd75)] -> xpath: (//*[text()='Featured'])[1]] (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (3f6cb244cf732f968ccfbacdb426d676)] -> xpath: (//*[text()='Featured'])[1]] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\patil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61491}, goog:processID: 19272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61491/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 193c3df4f14c1cbe2fe3bc3b2586bd75
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\patil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65153}, goog:processID: 22296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65153/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f6cb244cf732f968ccfbacdb426d676
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at com.qa.chroma.page.HomePage.applyDiscountSort(HomePage.java:119)
@@ -85,11 +85,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDiscountSortingTest -->
-        <test-method signature="verifyAveragePriceOfTop10DiscountedProducts()[pri:5, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-03-29T19:59:22 IST" name="verifyAveragePriceOfTop10DiscountedProducts" finished-at="2026-03-29T19:59:22 IST" duration-ms="264" status="PASS">
+        <test-method signature="verifyAveragePriceOfTop10DiscountedProducts()[pri:5, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-04-11T03:48:32 IST" name="verifyAveragePriceOfTop10DiscountedProducts" finished-at="2026-04-11T03:48:32 IST" duration-ms="294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAveragePriceOfTop10DiscountedProducts -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-03-29T19:59:22 IST" name="teardown" finished-at="2026-03-29T19:59:22 IST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.chroma.testcase.HomePageTestCase@563f38c4]" started-at="2026-04-11T03:48:32 IST" name="teardown" finished-at="2026-04-11T03:48:32 IST" duration-ms="384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
